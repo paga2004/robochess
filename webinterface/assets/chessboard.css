@@ -10,9 +10,36 @@ body {
   overflow: hidden;
 }
 
+#slider-container {
+  visibility: hidden;
+  padding: 1em;
+  padding-right: 0;
+  box-sizing: border-box;
+  width: 640px;
+  display: flex;
+}
+
+#slider-container label {
+  display: flex;
+}
+
+#slider-container button {
+  margin-left: 1em;
+  white-space: nowrap;
+}
+
+#depth-label {
+  padding-left: 0.5em;
+}
+
+.slider {
+  margin-left: 1em;
+  width: 100%;
+}
+
 .cg-wrap {
-  width: 320px;
-  height: 320px;
+  width: 640px;
+  height: 640px;
   position: relative;
   display: block;
 }

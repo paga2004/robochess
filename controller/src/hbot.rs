@@ -60,7 +60,8 @@ impl HBot {
         res
     }
 
-    fn init_sequence(&mut self) {
+    /// Performs the init sequence
+    pub fn init_sequence(&mut self) {
         self.s.max();
         self.wait();
         println!("touch bottom");
@@ -107,6 +108,8 @@ impl HBot {
 
         saftey_delay();
 
+        self.x = 0;
+        self.y = 0;
         println!("init sequence completed");
     }
 

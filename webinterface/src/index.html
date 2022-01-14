@@ -11,5 +11,22 @@
 
   <body>
     <div id="board-container">Connecting...</div>
+    <div id="slider-container">
+      <label for="depth-slider">
+        Suchtiefe:
+        <div id="depth-label"></div>
+      </label>
+      <input
+        type="range"
+        min="1"
+        max="5"
+        value="3"
+        class="slider"
+        id="depth-slider"
+      />
+      <button id="input">Zug eingeben</button>
+      <button id="calibrate">Kalibrieren</button>
+      <button id="reset">Zurücksetzen</button>
+    </div>
   </body>
 </html>
