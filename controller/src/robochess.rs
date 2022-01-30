@@ -201,8 +201,11 @@ impl RoboChess {
                         self.controller.wait();
                     } else {
                         self.controller.move_to_xy_slow(ox, oy + dy / 2);
+                        self.controller.wait();
                         self.controller.move_to_xy_slow(ox + dx, oy + dy / 2);
-                        self.controller.move_to_xy_slow(ox + dx, oy + ox);
+                        self.controller.wait();
+                        self.controller.move_to_xy_slow(ox + dx, oy + dy);
+                        self.controller.wait();
                     }
                     self.controller.down();
                     self.controller.wait();
